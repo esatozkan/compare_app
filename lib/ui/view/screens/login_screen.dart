@@ -8,6 +8,6 @@ class LoginScreen extends StatelessWidget {
     return const SafeArea(
       child: Scaffold(
         body: Center(
-          child: Text("Login Screen",),),),);
+          child: Text("hello world",style: TextStyle(fontSize: 45),),),),);
   }
 }
