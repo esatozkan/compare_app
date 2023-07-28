@@ -116,6 +116,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/esatozkan/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///Users/esatozkan/.pub-cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
@@ -128,10 +134,22 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "provider",
+      "rootUri": "file:///Users/esatozkan/.pub-cache/hosted/pub.dev/provider-6.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/esatozkan/development/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "smooth_page_indicator",
+      "rootUri": "file:///Users/esatozkan/.pub-cache/hosted/pub.dev/smooth_page_indicator-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "source_span",
@@ -182,7 +200,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-07-24T17:33:46.898126Z",
+  "generated": "2023-07-28T20:40:02.024900Z",
   "generator": "pub",
   "generatorVersion": "3.0.5"
 }
