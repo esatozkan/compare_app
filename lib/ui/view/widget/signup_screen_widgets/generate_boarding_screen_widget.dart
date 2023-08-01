@@ -1,6 +1,8 @@
+import 'dart:io';
 import 'package:compare_app/ui/view/widget/signup_screen_widgets/on_boarding_screen_widget.dart';
 import 'package:flutter/material.dart';
 import '../login_screen_widgets/custom_text_field.dart';
+
 
 TextEditingController nameController = TextEditingController();
 TextEditingController surnameController = TextEditingController();
@@ -12,6 +14,8 @@ TextEditingController instagramController = TextEditingController();
 TextEditingController twitterController = TextEditingController();
 TextEditingController threadsController = TextEditingController();
 TextEditingController snapchatController = TextEditingController();
+String dateTimeController=""; 
+File? profilePhoto;
 
 final List<OnBoardingScreen> getInformation = [
   OnBoardingScreen(
@@ -100,5 +104,25 @@ final List<OnBoardingScreen> getInformation = [
       controller: snapchatController,
       keyboardType: TextInputType.name,
     ),
-  )
+  ),
+  OnBoardingScreen(
+    image: "assets/signup_screen_images/sixth_image.png",
+    textField1: CustomTextField(
+      text: "Adınızı Giriniz",
+      isPasswordType: false,
+      controller: nameController,
+      keyboardType: TextInputType.name,
+      isIcon: true,
+      icon: Icons.person_outline,
+    ),
+    textField2: CustomTextField(
+      text: "Soyadınızı Giriniz",
+      isPasswordType: false,
+      controller: surnameController,
+      keyboardType: TextInputType.name,
+      isIcon: true,
+      icon: Icons.person_outline,
+    ),
+    whichScreen: "",
+  ),
 ];

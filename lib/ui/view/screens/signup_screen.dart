@@ -1,8 +1,6 @@
 import 'package:compare_app/data/constans/constans.dart';
-import 'package:compare_app/ui/provider/signup_screen_transition_provider.dart';
 import 'package:compare_app/ui/view/widget/signup_screen_widgets/generate_boarding_screen_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -13,27 +11,11 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
-  late PageController pageController;
-  bool isVisible = true;
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    pageController = PageController(initialPage: 0);
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    pageController.dispose();
-    super.dispose();
-  }
+  PageController pageController = PageController(initialPage: 0);
+  int currentPage = 0;
 
   @override
   Widget build(BuildContext context) {
-    SignUpScreenTransitionProvider signUpScreenTransitionProvider =
-        Provider.of<SignUpScreenTransitionProvider>(context, listen: false);
     return SafeArea(
       child: Scaffold(
         extendBodyBehindAppBar: true,
@@ -42,7 +24,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
           elevation: 0,
           leading: IconButton(
             onPressed: () {
-              signUpScreenTransitionProvider.resetIndex();
               Navigator.pop(context);
             },
             icon: const Icon(
@@ -78,6 +59,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   child: PageView.builder(
                     itemCount: getInformation.length,
                     controller: pageController,
+                    onPageChanged: (index) {
+                      setState(
+                        () {
+                          currentPage = index;
+                        },
+                      );
+                    },
                     itemBuilder: (context, index) => getInformation[index],
                   ),
                 ),
@@ -98,7 +86,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Visibility(
-          visible: isVisible,
+          visible: currentPage != 0 ? true : false,
           child: TextButton(
             onPressed: () {
               pageController.previousPage(
@@ -109,6 +97,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             child: const Text(
               "Geri",
               style: TextStyle(
+                fontSize: 18,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
@@ -135,9 +124,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
               curve: Curves.ease,
             );
           },
-          child: const Text(
-            "İleri",
-            style: TextStyle(
+          child: Text(
+            currentPage == getInformation.length - 1 ? "Başla" : "İleri",
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 18,
               fontWeight: FontWeight.bold,

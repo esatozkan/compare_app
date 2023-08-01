@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		LXY0aiIOh+Yqfn5wpPRW/9GXJCI=
+		PqAKQdOeSmtLOAEdvwORhu/tT7k=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		EN3iMjlhq+04sJUZIzZ3JDuPcDE=
+		a0DcidLrPMlXNn/SCStsKyONHp8=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		gou8ftc6WVHiMHEmnkoYM28obVc=
+		7IRAnPCcxrbOeNC3Cg0KKlpjmp8=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		3CGN1tvfBQRoywL/K8Uuam58L5g=
+		+wV/MF4gTnwgWVxwQvyWSZm6+OA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -70,11 +70,15 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		dYESwzmiSHMCOvi3FcHrFV6C6yY=
+		UYvN9eWar81mzw2nScf2wUbAsU4=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/app_logo.png</key>
 		<data>
 		F4UoGcVzthRg6YDhWkon/FA+Y80=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/person.png</key>
+		<data>
+		/kXlYp+fsY3vcX+HsdHFmA7QvOU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/signup_logos/instagram_logo.png</key>
 		<data>
@@ -98,19 +102,19 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/signup_screen_images/fourth_image.png</key>
 		<data>
-		B78WKktD5tPkG1wS1z8WWZeqZak=
+		R/M1I5U+N6C75ZOQ5qg3+oQzbtA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/signup_screen_images/second_image.png</key>
 		<data>
 		RzOSJkGdmFR7iO7aUC2BZ7n17/g=
 		</data>
-		<key>Frameworks/App.framework/flutter_assets/assets/signup_screen_images/sixth_version.png</key>
+		<key>Frameworks/App.framework/flutter_assets/assets/signup_screen_images/sixth_image.png</key>
 		<data>
 		6lcghjJG85W78QUz8yHiw4xQ8zY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/signup_screen_images/third_image.png</key>
 		<data>
-		iLsZSryqUkY9ClFhNhFq1X9d1/c=
+		SCVe6o9EVIgGnbNgBw5CRlU6/EI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -122,7 +126,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		R6bJrE/XHBGjLi9oQ9D1TsooJEo=
+		ujRDRHhD1ru3xrr0VSkxVcx8Vvc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -268,13 +272,25 @@
 		<data>
 		3IhPPBnfmqPD1v+ukGf6PLIiZhc=
 		</data>
+		<key>Frameworks/image_picker_ios.framework/Info.plist</key>
+		<data>
+		49l/ffWFp4i99ury4JCLLzvZblA=
+		</data>
+		<key>Frameworks/image_picker_ios.framework/_CodeSignature/CodeResources</key>
+		<data>
+		CwfjV+UIm6nwBzwM5hEcgOXFvTA=
+		</data>
+		<key>Frameworks/image_picker_ios.framework/image_picker_ios</key>
+		<data>
+		6J5QRJ1Gaf+PLudrF/uMJhZhd10=
+		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
 		DTfrK/eomhzxI/bubqUpHR7pNJo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LlOTOEuO3Bz82oknrtR2AizbfYw=
+		6ltXgxqjw0C9ktd3LUgsFUUD1NI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -357,7 +373,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XM5ZkGUxvjbTDxmLftXR1oJunddG1MVfXCDXdydtH2Q=
+			Fbr37b8wH+kbDJ3s9fv+fVuvWVI0EzZAvoFSvCHgZy4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -371,21 +387,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ptAaF3KKsK9UOmiX+DFv5bK+3eZNc5FhlBoDM/W9Zao=
+			4zKxOW+WBSZKk/f+P7FivkNo4lD5EootV4sZLAW9GG4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nUFpp8kwU1f8GgqOYKp4GLMLWsHDLJx6yaBY0hLXqIA=
+			MUkZtm/W4dbdB92T185+4XN/EkK125tGsYVMitUIRzA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			feJCEEy0OM2c5e/QJ26e+etZmqkXPeIqltj28ymqpKo=
+			E/a+H2WUcKG69apLMac82lwoPcqywroBsLxe25qwdss=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -399,7 +415,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bPZVm+MN67r2gyN1rUQK+nRuUpB+jwVIl2Fc0kdRrgs=
+			Ry1MXkPWSvshS0SBWMtu8sYWEZmNm3D7MtxR53tDNVc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/app_logo.png</key>
@@ -407,6 +423,13 @@
 			<key>hash2</key>
 			<data>
 			IonHjpyyTL0t/tE2Rt1QzIVMw373GNGiosIwLPkBnhA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/person.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2NuxtcgrxOUWswVClZHcpd35oOI8DC4jcVhEic8hiPA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/signup_logos/instagram_logo.png</key>
@@ -448,7 +471,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h1jCNC1DkTIIdChbNwQmuVL8PF1Uk5FFJD40R9VtrRU=
+			opyzeE0EWZCGJTdQwVgCkahB5ikgbwk1qPdmuPsnui0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/signup_screen_images/second_image.png</key>
@@ -458,7 +481,7 @@
 			CvsYNL4BlZUtCvTcey52bB4v+kXyzrJrsn4W/TyrFiE=
 			</data>
 		</dict>
-		<key>Frameworks/App.framework/flutter_assets/assets/signup_screen_images/sixth_version.png</key>
+		<key>Frameworks/App.framework/flutter_assets/assets/signup_screen_images/sixth_image.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -469,7 +492,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wkue8Eqj4CvVnzA/JSxqZTRk0Bfd9OtE8tsq2CdLdWU=
+			sNs62rbpFuCqwRMsgiWHjWuNPmVYfGunUcemG9HCB/M=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -490,7 +513,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y/QrSod9tT2uTg3yWoGTOdsuAaAV81DROZOVJK+XoBM=
+			zQkeETkbxaf4h/JVptgX4YwqsZfg819NaYKlRCCyFDA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -743,6 +766,27 @@
 			<key>hash2</key>
 			<data>
 			5l1OYoM1y/17ObuLyHTZYaY08K6ZnaDqsbVAHFaFWOk=
+			</data>
+		</dict>
+		<key>Frameworks/image_picker_ios.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SKd6QP6E138MJYGB+/c9xcmiHDIHeRMlv9zlsGwgykQ=
+			</data>
+		</dict>
+		<key>Frameworks/image_picker_ios.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Nwbg6J2N8reOS4vUJSQYkDMQzGi1Dalt2DKTAAK+nTA=
+			</data>
+		</dict>
+		<key>Frameworks/image_picker_ios.framework/image_picker_ios</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZTUvhbG7q7SLcL5fGHP02oqMpi5wRzGbFwZRGkxTNWY=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>

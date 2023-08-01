@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		gou8ftc6WVHiMHEmnkoYM28obVc=
+		7IRAnPCcxrbOeNC3Cg0KKlpjmp8=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		3CGN1tvfBQRoywL/K8Uuam58L5g=
+		+wV/MF4gTnwgWVxwQvyWSZm6+OA=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,11 +22,15 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		dYESwzmiSHMCOvi3FcHrFV6C6yY=
+		UYvN9eWar81mzw2nScf2wUbAsU4=
 		</data>
 		<key>flutter_assets/assets/app_logo.png</key>
 		<data>
 		F4UoGcVzthRg6YDhWkon/FA+Y80=
+		</data>
+		<key>flutter_assets/assets/person.png</key>
+		<data>
+		/kXlYp+fsY3vcX+HsdHFmA7QvOU=
 		</data>
 		<key>flutter_assets/assets/signup_logos/instagram_logo.png</key>
 		<data>
@@ -50,19 +54,19 @@
 		</data>
 		<key>flutter_assets/assets/signup_screen_images/fourth_image.png</key>
 		<data>
-		B78WKktD5tPkG1wS1z8WWZeqZak=
+		R/M1I5U+N6C75ZOQ5qg3+oQzbtA=
 		</data>
 		<key>flutter_assets/assets/signup_screen_images/second_image.png</key>
 		<data>
 		RzOSJkGdmFR7iO7aUC2BZ7n17/g=
 		</data>
-		<key>flutter_assets/assets/signup_screen_images/sixth_version.png</key>
+		<key>flutter_assets/assets/signup_screen_images/sixth_image.png</key>
 		<data>
 		6lcghjJG85W78QUz8yHiw4xQ8zY=
 		</data>
 		<key>flutter_assets/assets/signup_screen_images/third_image.png</key>
 		<data>
-		iLsZSryqUkY9ClFhNhFq1X9d1/c=
+		SCVe6o9EVIgGnbNgBw5CRlU6/EI=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -74,7 +78,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		R6bJrE/XHBGjLi9oQ9D1TsooJEo=
+		ujRDRHhD1ru3xrr0VSkxVcx8Vvc=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -95,14 +99,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nUFpp8kwU1f8GgqOYKp4GLMLWsHDLJx6yaBY0hLXqIA=
+			MUkZtm/W4dbdB92T185+4XN/EkK125tGsYVMitUIRzA=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			feJCEEy0OM2c5e/QJ26e+etZmqkXPeIqltj28ymqpKo=
+			E/a+H2WUcKG69apLMac82lwoPcqywroBsLxe25qwdss=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -116,7 +120,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bPZVm+MN67r2gyN1rUQK+nRuUpB+jwVIl2Fc0kdRrgs=
+			Ry1MXkPWSvshS0SBWMtu8sYWEZmNm3D7MtxR53tDNVc=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/app_logo.png</key>
@@ -124,6 +128,13 @@
 			<key>hash2</key>
 			<data>
 			IonHjpyyTL0t/tE2Rt1QzIVMw373GNGiosIwLPkBnhA=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/person.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2NuxtcgrxOUWswVClZHcpd35oOI8DC4jcVhEic8hiPA=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/signup_logos/instagram_logo.png</key>
@@ -165,7 +176,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h1jCNC1DkTIIdChbNwQmuVL8PF1Uk5FFJD40R9VtrRU=
+			opyzeE0EWZCGJTdQwVgCkahB5ikgbwk1qPdmuPsnui0=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/signup_screen_images/second_image.png</key>
@@ -175,7 +186,7 @@
 			CvsYNL4BlZUtCvTcey52bB4v+kXyzrJrsn4W/TyrFiE=
 			</data>
 		</dict>
-		<key>flutter_assets/assets/signup_screen_images/sixth_version.png</key>
+		<key>flutter_assets/assets/signup_screen_images/sixth_image.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -186,7 +197,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wkue8Eqj4CvVnzA/JSxqZTRk0Bfd9OtE8tsq2CdLdWU=
+			sNs62rbpFuCqwRMsgiWHjWuNPmVYfGunUcemG9HCB/M=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -207,7 +218,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y/QrSod9tT2uTg3yWoGTOdsuAaAV81DROZOVJK+XoBM=
+			zQkeETkbxaf4h/JVptgX4YwqsZfg819NaYKlRCCyFDA=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

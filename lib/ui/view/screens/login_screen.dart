@@ -63,6 +63,7 @@ class _LogInScreenState extends State<LogInScreen> {
                   customSignInSignUpButton(
                     context,
                     true,
+                    "Giriş Yap",
                     () {},
                   ),
                   signUpWidget(context),
