@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -8,6 +7,8 @@ class CustomTextField extends StatelessWidget {
   final TextInputType keyboardType;
   final bool isIcon;
   final IconData icon;
+  final bool isRequired;
+
   const CustomTextField({
     Key? key,
     required this.text,
@@ -16,6 +17,7 @@ class CustomTextField extends StatelessWidget {
     required this.keyboardType,
     this.isIcon = false,
     this.icon = Icons.abc,
+    this.isRequired = false,
   }) : super(key: key);
 
   @override
@@ -36,6 +38,22 @@ class CustomTextField extends StatelessWidget {
                 color: Colors.white70,
               )
             : null,
+        suffixIcon: isRequired == true
+            ? Padding(
+                padding: const EdgeInsets.only(
+                  top: 5,
+                ),
+                child: Text(
+                  "*",
+                  style: TextStyle(
+                    color: Colors.white.withOpacity(.9),
+                    fontSize: 20,
+                  ),
+                ),
+              )
+            : null,
+        suffixIconColor:
+            isRequired == true ? Colors.white.withOpacity(.9) : null,
         labelText: text,
         labelStyle: TextStyle(
           color: Colors.white.withOpacity(.9),

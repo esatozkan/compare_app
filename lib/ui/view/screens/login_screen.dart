@@ -21,9 +21,7 @@ class _LogInScreenState extends State<LogInScreen> {
         body: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
-          decoration: BoxDecoration(
-            gradient: signScreenBackgroundColor,
-          ),
+          color: signScreenBackgroundColor,
           child: SingleChildScrollView(
             child: Padding(
               padding: EdgeInsets.fromLTRB(

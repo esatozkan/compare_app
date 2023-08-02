@@ -1,7 +1,7 @@
 import 'package:compare_app/data/constans/constans.dart';
 import 'package:compare_app/ui/view/widget/signup_screen_widgets/generate_boarding_screen_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import '../widget/signup_screen_widgets/signup_control_button.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -10,10 +10,10 @@ class SignUpScreen extends StatefulWidget {
   State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
-class _SignUpScreenState extends State<SignUpScreen> {
-  PageController pageController = PageController(initialPage: 0);
-  int currentPage = 0;
+int currentPage = 0;
+PageController pageController = PageController(initialPage: 0);
 
+class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -24,6 +24,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           elevation: 0,
           leading: IconButton(
             onPressed: () {
+              currentPage=0;
               Navigator.pop(context);
             },
             icon: const Icon(
@@ -43,9 +44,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         body: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
-          decoration: BoxDecoration(
-            gradient: signScreenBackgroundColor,
-          ),
+          color: signScreenBackgroundColor,
           child: Padding(
             padding: EdgeInsets.fromLTRB(
               20,
@@ -57,6 +56,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               children: [
                 Expanded(
                   child: PageView.builder(
+                    physics: NeverScrollableScrollPhysics(),
                     itemCount: getInformation.length,
                     controller: pageController,
                     onPageChanged: (index) {
@@ -78,62 +78,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
           ),
         ),
       ),
-    );
-  }
-
-  Row controlButtonWidget(context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Visibility(
-          visible: currentPage != 0 ? true : false,
-          child: TextButton(
-            onPressed: () {
-              pageController.previousPage(
-                duration: const Duration(milliseconds: 300),
-                curve: Curves.ease,
-              );
-            },
-            child: const Text(
-              "Geri",
-              style: TextStyle(
-                fontSize: 18,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Center(
-          child: SmoothPageIndicator(
-            controller: pageController,
-            count: getInformation.length,
-            effect: const WormEffect(
-              spacing: 16,
-              dotColor: Colors.white24,
-              activeDotColor: Colors.white,
-              dotWidth: 10,
-              dotHeight: 10,
-            ),
-          ),
-        ),
-        TextButton(
-          onPressed: () {
-            pageController.nextPage(
-              duration: const Duration(milliseconds: 300),
-              curve: Curves.ease,
-            );
-          },
-          child: Text(
-            currentPage == getInformation.length - 1 ? "Başla" : "İleri",
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-      ],
     );
   }
 }

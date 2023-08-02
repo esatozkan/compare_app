@@ -27,6 +27,7 @@ final List<OnBoardingScreen> getInformation = [
       keyboardType: TextInputType.name,
       isIcon: true,
       icon: Icons.person_outline,
+      isRequired: true,
     ),
     textField2: CustomTextField(
       text: "Soyadınızı Giriniz",
@@ -35,6 +36,7 @@ final List<OnBoardingScreen> getInformation = [
       keyboardType: TextInputType.name,
       isIcon: true,
       icon: Icons.person_outline,
+      isRequired: true,
     ),
   ),
   OnBoardingScreen(
@@ -46,6 +48,7 @@ final List<OnBoardingScreen> getInformation = [
       keyboardType: TextInputType.emailAddress,
       isIcon: true,
       icon: Icons.email,
+      isRequired: true,
     ),
     textField2: CustomTextField(
       text: "Telefon Numaranızı Giriniz",
@@ -54,6 +57,7 @@ final List<OnBoardingScreen> getInformation = [
       keyboardType: TextInputType.phone,
       isIcon: true,
       icon: Icons.phone,
+      isRequired: true,
     ),
   ),
   OnBoardingScreen(
@@ -65,6 +69,7 @@ final List<OnBoardingScreen> getInformation = [
       keyboardType: TextInputType.visiblePassword,
       isIcon: true,
       icon: Icons.lock,
+      isRequired: true,
     ),
     textField2: CustomTextField(
       text: "Şifrenizi Tekrar Giriniz",
@@ -73,6 +78,7 @@ final List<OnBoardingScreen> getInformation = [
       keyboardType: TextInputType.visiblePassword,
       isIcon: true,
       icon: Icons.lock,
+      isRequired: true,
     ),
   ),
   OnBoardingScreen(

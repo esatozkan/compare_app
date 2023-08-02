@@ -53,89 +53,95 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               )
             : CupertinoPageScaffold(
                 backgroundColor: Colors.transparent,
-                child: Column(
-                  children: [
-                    profilePhoto == null
-                        ? Image.asset(
-                            "assets/person.png",
-                            height: 150,
-                            width: 150,
-                            color: Colors.white,
-                            fit: BoxFit.cover,
-                          )
-                        : CircleAvatar(
-                            radius: 80,
-                            backgroundImage: FileImage(profilePhoto!),
-                          ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    customSignInSignUpButton(
-                      context,
-                      false,
-                      "Fotoğraf Ekle",
-                      () {
-                        getImage(context);
-                      },
-                    ),
-                    const SizedBox(
-                      height: 50,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Text(
-                          "Doğum Tarihinizi Giriniz :",
-                          style: TextStyle(
-                              color: Colors.white.withOpacity(.9),
-                              fontWeight: FontWeight.bold),
-                        ),
-                        CupertinoButton(
-                          child: Container(
-                            decoration: const BoxDecoration(
-                              border: Border(
-                                bottom: BorderSide(
-                                  color: Colors.white,
-                                ),
-                              ),
+                child: Center(
+                  child: Column(
+                    children: [
+                      profilePhoto == null
+                          ? Image.asset(
+                              "assets/person.png",
+                              height: 150,
+                              width: 150,
+                              color: Colors.white,
+                              fit: BoxFit.cover,
+                            )
+                          : CircleAvatar(
+                              radius: 80,
+                              backgroundImage: FileImage(profilePhoto!),
                             ),
-                            child: Text(
-                              "  ${dateTime.day} - ${dateTime.month} - ${dateTime.year}  ",
-                              style: const TextStyle(
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      customSignInSignUpButton(
+                        context,
+                        false,
+                        "Fotoğraf Ekle",
+                        () {
+                          getImage(context);
+                        },
+                      ),
+                      const SizedBox(
+                        height: 70,
+                      ),
+                      Text(
+                        "Doğum Tarihinizi Giriniz ",
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(.9),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          fontFamily: 'AbrilFatface',
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      CupertinoButton(
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            border: Border(
+                              bottom: BorderSide(
                                 color: Colors.white,
                               ),
                             ),
                           ),
-                          onPressed: () {
-                            showCupertinoModalPopup(
-                              context: context,
-                              builder: (BuildContext context) => SafeArea(
-                                child: SizedBox(
-                                  height: 250,
-                                  width: MediaQuery.of(context).size.width,
-                                  child: CupertinoDatePicker(
-                                    backgroundColor: Colors.white,
-                                    initialDateTime: dateTime,
-                                    onDateTimeChanged: (DateTime newTime) {
-                                      setState(
-                                        () {
-                                          dateTime = newTime;
-                                          dateTimeController =
-                                              "${newTime.day}-${newTime.month}-${newTime.year}";
-                                        },
-                                      );
-                                    },
-                                    use24hFormat: true,
-                                    mode: CupertinoDatePickerMode.date,
-                                  ),
+                          child: Text(
+                            "  ${dateTime.day} - ${dateTime.month} - ${dateTime.year}  ",
+                            style: const TextStyle(
+                              fontSize: 22,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        onPressed: () {
+                          showCupertinoModalPopup(
+                            context: context,
+                            builder: (BuildContext context) => SafeArea(
+                              child: SizedBox(
+                                height: 250,
+                                width: MediaQuery.of(context).size.width,
+                                child: CupertinoDatePicker(
+                                  maximumDate: DateTime.now(),
+                                  minimumDate: DateTime(1900),
+                                  backgroundColor: Colors.white,
+                                  initialDateTime: dateTime,
+                                  onDateTimeChanged: (DateTime newTime) {
+                                    setState(
+                                      () {
+                                        dateTime = newTime;
+                                        dateTimeController =
+                                            "${newTime.day}-${newTime.month}-${newTime.year}";
+                                      },
+                                    );
+                                  },
+                                  use24hFormat: true,
+                                  mode: CupertinoDatePickerMode.date,
                                 ),
                               ),
-                            );
-                          },
-                        ),
-                      ],
-                    ),
-                  ],
+                            ),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
                 ),
               ),
       ),
