@@ -70,6 +70,7 @@ final List<OnBoardingScreen> getInformation = [
       isIcon: true,
       icon: Icons.lock,
       isRequired: true,
+      isPasswordIcon: true,
     ),
     textField2: CustomTextField(
       text: "Şifrenizi Tekrar Giriniz",
@@ -79,7 +80,9 @@ final List<OnBoardingScreen> getInformation = [
       isIcon: true,
       icon: Icons.lock,
       isRequired: true,
+      isPasswordIcon: true,
     ),
+    isPasswordText: true,
   ),
   OnBoardingScreen(
     image: "assets/signup_screen_images/fourth_image.png",

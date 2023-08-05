@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../data/constans/constans.dart';
 
 Container customSignInSignUpButton(
   BuildContext context,
@@ -25,7 +26,7 @@ Container customSignInSignUpButton(
             if (states.contains(MaterialState.pressed)) {
               return Colors.black26;
             }
-            return Colors.white;
+            return signScreenItemColor;
           },
         ),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(

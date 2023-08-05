@@ -1,13 +1,14 @@
 import 'package:compare_app/ui/view/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
+import '../../../../data/constans/constans.dart';
 
 Row signUpWidget(BuildContext context) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      const Text(
+       Text(
         "Hesabın yok mu?",
-        style: TextStyle(color: Colors.white70),
+        style: TextStyle(color: signScreenSecondItemColor),
       ),
       GestureDetector(
         onTap: () {
@@ -18,10 +19,10 @@ Row signUpWidget(BuildContext context) {
             ),
           );
         },
-        child:const Text(
+        child: Text(
           " Kaydol",
           style: TextStyle(
-            color: Colors.white,
+            color: signScreenItemColor,
             fontWeight: FontWeight.bold,
           ),
         ),

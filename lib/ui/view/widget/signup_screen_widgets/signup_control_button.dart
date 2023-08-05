@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import '../../../../data/constans/constans.dart';
 import '../../screens/signup_screen.dart';
 import 'generate_boarding_screen_widget.dart';
 import 'signup_textfield_controller.dart';
@@ -17,11 +18,11 @@ Row controlButtonWidget(context) {
               curve: Curves.ease,
             );
           },
-          child: const Text(
+          child: Text(
             "Geri",
             style: TextStyle(
               fontSize: 18,
-              color: Colors.white,
+              color: signScreenItemColor,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -31,10 +32,10 @@ Row controlButtonWidget(context) {
         child: SmoothPageIndicator(
           controller: pageController,
           count: getInformation.length,
-          effect: const WormEffect(
+          effect:  WormEffect(
             spacing: 16,
             dotColor: Colors.white24,
-            activeDotColor: Colors.white,
+            activeDotColor: signScreenItemColor,
             dotWidth: 10,
             dotHeight: 10,
           ),
@@ -46,8 +47,8 @@ Row controlButtonWidget(context) {
         },
         child: Text(
           currentPage == getInformation.length - 1 ? "Başla" : "İleri",
-          style: const TextStyle(
-            color: Colors.white,
+          style: TextStyle(
+            color: signScreenItemColor,
             fontSize: 18,
             fontWeight: FontWeight.bold,
           ),

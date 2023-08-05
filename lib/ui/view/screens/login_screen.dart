@@ -32,7 +32,7 @@ class _LogInScreenState extends State<LogInScreen> {
               ),
               child: Column(
                 children: [
-                  appLogo(),
+                  appLogo(context),
                   const SizedBox(
                     height: 30,
                   ),
@@ -54,6 +54,8 @@ class _LogInScreenState extends State<LogInScreen> {
                     keyboardType: TextInputType.visiblePassword,
                     isIcon: true,
                     icon: Icons.lock,
+                    isRequired: true,
+                    isPasswordIcon: true,
                   ),
                   const SizedBox(
                     height: 20,

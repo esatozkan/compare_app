@@ -24,20 +24,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
           elevation: 0,
           leading: IconButton(
             onPressed: () {
-              currentPage=0;
+              currentPage = 0;
               Navigator.pop(context);
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.arrow_back_ios,
-              color: Colors.white,
+              color: signScreenItemColor,
             ),
           ),
-          title: const Text(
+          title: Text(
             "Kaydol",
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: signScreenItemColor,
             ),
           ),
         ),

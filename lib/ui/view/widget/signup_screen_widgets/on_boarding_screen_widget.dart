@@ -5,18 +5,21 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:compare_app/ui/view/widget/login_screen_widgets/custom_text_field.dart';
 import 'package:image_picker/image_picker.dart';
+import '../../../../data/constans/constans.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   final String image;
   final CustomTextField textField1;
   final CustomTextField textField2;
   final String whichScreen;
+  final bool isPasswordText;
   const OnBoardingScreen({
     Key? key,
     required this.image,
     required this.textField1,
     required this.textField2,
     this.whichScreen = "getTextFieldInformation",
+    this.isPasswordText = false,
   }) : super(key: key);
 
   @override
@@ -24,7 +27,7 @@ class OnBoardingScreen extends StatefulWidget {
 }
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
-  DateTime dateTime = DateTime.now();
+  DateTime dateTime = DateTime.now().subtract(const Duration(days: 18 * 365));
 
   @override
   Widget build(BuildContext context) {
@@ -36,10 +39,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 children: [
                   Image.asset(
                     widget.image,
-                    height: 250,
-                    width: 300,
+                    height: MediaQuery.of(context).size.width * .581,
+                    width: MediaQuery.of(context).size.height * .321,
                     fit: BoxFit.cover,
-                    color: Colors.white,
+                    color: signScreenItemColor,
                   ),
                   const SizedBox(
                     height: 20,
@@ -49,6 +52,17 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     height: 20,
                   ),
                   widget.textField2,
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(
+                      widget.isPasswordText == true
+                          ? "* Şifreniz minimum 8 karakterli olmalı, en az bir  harf ve rakam içermelidir."
+                          : "",
+                      style: TextStyle(
+                        color: signScreenSecondItemColor,
+                      ),
+                    ),
+                  ),
                 ],
               )
             : CupertinoPageScaffold(
@@ -61,7 +75,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                               "assets/person.png",
                               height: 150,
                               width: 150,
-                              color: Colors.white,
+                              color: signScreenItemColor,
                               fit: BoxFit.cover,
                             )
                           : CircleAvatar(
@@ -85,7 +99,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       Text(
                         "Doğum Tarihinizi Giriniz ",
                         style: TextStyle(
-                          color: Colors.white.withOpacity(.9),
+                          color: signScreenItemColor.withOpacity(.9),
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
                           fontFamily: 'AbrilFatface',
@@ -96,18 +110,18 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       ),
                       CupertinoButton(
                         child: Container(
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             border: Border(
                               bottom: BorderSide(
-                                color: Colors.white,
+                                color: signScreenItemColor,
                               ),
                             ),
                           ),
                           child: Text(
                             "  ${dateTime.day} - ${dateTime.month} - ${dateTime.year}  ",
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 22,
-                              color: Colors.white,
+                              color: signScreenItemColor,
                             ),
                           ),
                         ),
@@ -115,26 +129,36 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           showCupertinoModalPopup(
                             context: context,
                             builder: (BuildContext context) => SafeArea(
-                              child: SizedBox(
-                                height: 250,
-                                width: MediaQuery.of(context).size.width,
-                                child: CupertinoDatePicker(
-                                  maximumDate: DateTime.now(),
-                                  minimumDate: DateTime(1900),
-                                  backgroundColor: Colors.white,
-                                  initialDateTime: dateTime,
-                                  onDateTimeChanged: (DateTime newTime) {
-                                    setState(
-                                      () {
-                                        dateTime = newTime;
-                                        dateTimeController =
-                                            "${newTime.day}-${newTime.month}-${newTime.year}";
+                              child: Stack(
+                                children: [
+                                  Container(
+                                    height: 250,
+                                    width: MediaQuery.of(context).size.width,
+                                    color: signScreenItemColor,
+                                  ),
+                                  SizedBox(
+                                    height: 250,
+                                    width: MediaQuery.of(context).size.width,
+                                    child: CupertinoDatePicker(
+                                      maximumDate: DateTime.now().subtract(
+                                          const Duration(days: 18 * 365)),
+                                      minimumDate: DateTime(1900),
+                                      backgroundColor: signScreenItemColor,
+                                      initialDateTime: dateTime,
+                                      onDateTimeChanged: (DateTime newTime) {
+                                        setState(
+                                          () {
+                                            dateTime = newTime;
+                                            dateTimeController =
+                                                "${newTime.day}-${newTime.month}-${newTime.year}";
+                                          },
+                                        );
                                       },
-                                    );
-                                  },
-                                  use24hFormat: true,
-                                  mode: CupertinoDatePickerMode.date,
-                                ),
+                                      use24hFormat: true,
+                                      mode: CupertinoDatePickerMode.date,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           );

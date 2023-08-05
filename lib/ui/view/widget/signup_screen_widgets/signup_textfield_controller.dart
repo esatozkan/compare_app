@@ -37,10 +37,8 @@ void signupTextFieldController(context) {
     if (password1Controller.text.isEmpty ||
         password2Controller.text.isEmpty ||
         password1Controller.text != password2Controller.text ||
-        !RegExp(r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$')
-            .hasMatch(password1Controller.text) ||
-        !RegExp(r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$')
-            .hasMatch(password2Controller.text)) {
+        !RegExp(r'^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$')
+            .hasMatch(password1Controller.text)) {
       warningWidget(context);
     } else {
       pageController.nextPage(
