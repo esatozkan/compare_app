@@ -1,9 +1,15 @@
 # This is a generated file; do not edit or check into version control.
+cloud_firestore=/Users/esatozkan/.pub-cache/hosted/pub.dev/cloud_firestore-4.8.4/
+cloud_firestore_web=/Users/esatozkan/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.6.3/
 file_selector_linux=/Users/esatozkan/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.2/
 file_selector_macos=/Users/esatozkan/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.3+1/
 file_selector_windows=/Users/esatozkan/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3/
+firebase_auth=/Users/esatozkan/.pub-cache/hosted/pub.dev/firebase_auth-4.7.2/
+firebase_auth_web=/Users/esatozkan/.pub-cache/hosted/pub.dev/firebase_auth_web-5.6.2/
 firebase_core=/Users/esatozkan/.pub-cache/hosted/pub.dev/firebase_core-2.15.0/
 firebase_core_web=/Users/esatozkan/.pub-cache/hosted/pub.dev/firebase_core_web-2.6.0/
+firebase_storage=/Users/esatozkan/.pub-cache/hosted/pub.dev/firebase_storage-11.2.5/
+firebase_storage_web=/Users/esatozkan/.pub-cache/hosted/pub.dev/firebase_storage_web-3.6.5/
 flutter_plugin_android_lifecycle=/Users/esatozkan/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.15/
 image_picker=/Users/esatozkan/.pub-cache/hosted/pub.dev/image_picker-1.0.1/
 image_picker_android=/Users/esatozkan/.pub-cache/hosted/pub.dev/image_picker_android-0.8.7+4/

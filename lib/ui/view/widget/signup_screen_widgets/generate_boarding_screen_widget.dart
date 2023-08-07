@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:compare_app/ui/view/widget/signup_screen_widgets/on_boarding_screen_widget.dart';
 import 'package:flutter/material.dart';
-import '../login_screen_widgets/custom_text_field.dart';
+import '../login_screen_widgets/custom_text_field_widget.dart';
 
 
 TextEditingController nameController = TextEditingController();
@@ -14,7 +14,7 @@ TextEditingController instagramController = TextEditingController();
 TextEditingController twitterController = TextEditingController();
 TextEditingController threadsController = TextEditingController();
 TextEditingController snapchatController = TextEditingController();
-String dateTimeController=""; 
+TextEditingController dateTimeController=TextEditingController(); 
 File? profilePhoto;
 
 final List<OnBoardingScreen> getInformation = [
@@ -70,6 +70,7 @@ final List<OnBoardingScreen> getInformation = [
       isIcon: true,
       icon: Icons.lock,
       isRequired: true,
+      isPasswordIcon: true,
     ),
     textField2: CustomTextField(
       text: "Şifrenizi Tekrar Giriniz",
@@ -79,7 +80,9 @@ final List<OnBoardingScreen> getInformation = [
       isIcon: true,
       icon: Icons.lock,
       isRequired: true,
+      isPasswordIcon: true,
     ),
+    isPasswordText: true,
   ),
   OnBoardingScreen(
     image: "assets/signup_screen_images/fourth_image.png",

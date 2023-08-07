@@ -1,7 +1,7 @@
 import 'package:compare_app/data/constans/constans.dart';
 import 'package:compare_app/ui/view/widget/signup_screen_widgets/generate_boarding_screen_widget.dart';
 import 'package:flutter/material.dart';
-import '../widget/signup_screen_widgets/signup_control_button.dart';
+import '../widget/signup_screen_widgets/signup_control_button_widget.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -24,20 +24,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
           elevation: 0,
           leading: IconButton(
             onPressed: () {
-              currentPage=0;
+              currentPage = 0;
               Navigator.pop(context);
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.arrow_back_ios,
-              color: Colors.white,
+              color: signScreenItemColor,
             ),
           ),
-          title: const Text(
+          title: Text(
             "Kaydol",
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: signScreenItemColor,
             ),
           ),
         ),
@@ -71,7 +71,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 20),
-                  child: controlButtonWidget(context),
+                  child: signUpControlButtonWidget(context),
                 ),
               ],
             ),
