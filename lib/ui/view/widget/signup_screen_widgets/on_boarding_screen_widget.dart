@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'package:compare_app/ui/view/widget/login_screen_widgets/custom_signIn_signUp_button.dart';
+import 'package:compare_app/ui/view/widget/login_screen_widgets/custom_signIn_signUp_button_widget.dart';
 import 'package:compare_app/ui/view/widget/signup_screen_widgets/generate_boarding_screen_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:compare_app/ui/view/widget/login_screen_widgets/custom_text_field.dart';
+import 'package:compare_app/ui/view/widget/login_screen_widgets/custom_text_field_widget.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../../../data/constans/constans.dart';
 
@@ -85,7 +85,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       const SizedBox(
                         height: 20,
                       ),
-                      customSignInSignUpButton(
+                      customSignInSignUpButtonWidget(
                         context,
                         false,
                         "Fotoğraf Ekle",
@@ -149,7 +149,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                         setState(
                                           () {
                                             dateTime = newTime;
-                                            dateTimeController =
+                                            dateTimeController.text =
                                                 "${newTime.day}-${newTime.month}-${newTime.year}";
                                           },
                                         );
@@ -183,7 +183,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              customSignInSignUpButton(
+              customSignInSignUpButtonWidget(
                 context,
                 false,
                 "Galeriden Seç",
@@ -199,7 +199,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   fontWeight: FontWeight.normal,
                 ),
               ),
-              customSignInSignUpButton(
+              customSignInSignUpButtonWidget(
                 context,
                 false,
                 "Kamerayı Aç",

@@ -1,6 +1,7 @@
-import 'package:compare_app/ui/view/widget/login_screen_widgets/custom_signIn_signUp_button.dart';
-import 'package:compare_app/ui/view/widget/login_screen_widgets/custom_text_field.dart';
-import 'package:compare_app/ui/view/widget/login_screen_widgets/signUp_button_widget.dart';
+import 'package:compare_app/data/services/auth_service.dart';
+import 'package:compare_app/ui/view/widget/login_screen_widgets/custom_signIn_signUp_button_widget.dart';
+import 'package:compare_app/ui/view/widget/login_screen_widgets/custom_text_field_widget.dart';
+import 'package:compare_app/ui/view/widget/login_screen_widgets/signUp_widget.dart';
 import 'package:flutter/material.dart';
 import '../../../data/constans/constans.dart';
 
@@ -12,8 +13,8 @@ class LogInScreen extends StatefulWidget {
 }
 
 class _LogInScreenState extends State<LogInScreen> {
-  TextEditingController passwordController = TextEditingController();
-  TextEditingController emailController = TextEditingController();
+  TextEditingController signInpasswordController = TextEditingController();
+  TextEditingController signInemailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -39,7 +40,7 @@ class _LogInScreenState extends State<LogInScreen> {
                   CustomTextField(
                     text: " E-posta Adresinizi Giriniz ",
                     isPasswordType: false,
-                    controller: emailController,
+                    controller: signInemailController,
                     keyboardType: TextInputType.emailAddress,
                     isIcon: true,
                     icon: Icons.person_outline,
@@ -50,7 +51,7 @@ class _LogInScreenState extends State<LogInScreen> {
                   CustomTextField(
                     text: " Şifrenizi Giriniz ",
                     isPasswordType: true,
-                    controller: passwordController,
+                    controller: signInpasswordController,
                     keyboardType: TextInputType.visiblePassword,
                     isIcon: true,
                     icon: Icons.lock,
@@ -60,11 +61,17 @@ class _LogInScreenState extends State<LogInScreen> {
                   const SizedBox(
                     height: 20,
                   ),
-                  customSignInSignUpButton(
+                  customSignInSignUpButtonWidget(
                     context,
                     true,
                     "Giriş Yap",
-                    () {},
+                    () {
+                      AuthService().signIn(
+                        context,
+                        email: signInemailController.text,
+                        password: signInpasswordController.text,
+                      );
+                    },
                   ),
                   signUpWidget(context),
                 ],
